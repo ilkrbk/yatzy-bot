@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <ul class="app__list first-player-list">
+            <li class="app__item-first">
+                <h3 class="app__item-title">Units</h3>
+                <h4 class="app__item-point">0</h4>
+            </li>
+            <li class="app__item-first">
+                <h3 class="app__item-title">Deuces</h3>
+                <h4 class="app__item-point">0</h4>
+            </li>
+            <li class="app__item-first">
+                <h3 class="app__item-title">Triplets</h3>
+                <h4 class="app__item-point">0</h4>
+            </li>
+            <li class="app__item-first">
+                <h3 class="app__item-title">Fours</h3>
+                <h4 class="app__item-point">0</h4>
+            </li>
+            <li class="app__item-first">
+                <h3 class="app__item-title">Fives</h3>
+                <h4 class="app__item-point">0</h4>
+            </li>
+            <li class="app__item-first">
+                <h3 class="app__item-title">Sixes</h3>
+                <h4 class="app__item-point">0</h4>
+            </li>
+            <li class="app__item-first">
+                <h3 class="app__item-title">Three similar</h3>
+                <h4 class="app__item-point">0</h4>
+            </li>
+            <li class="app__item-first">
+                <h3 class="app__item-title">Square</h3>
+                <h4 class="app__item-point">0</h4>
+            </li>
+            <li class="app__item-first">
+                <h3 class="app__item-title">Full house</h3>
+                <h4 class="app__item-point">0</h4>
+            </li>
+            <li class="app__item-first">
+                <h3 class="app__item-title">Little street</h3>
+                <h4 class="app__item-point">0</h4>
+            </li>
+            <li class="app__item-first">
+                <h3 class="app__item-title">Big street</h3>
+                <h4 class="app__item-point">0</h4>
+            </li>
+            <li class="app__item-first">
+                <h3 class="app__item-title">Poker</h3>
+                <h4 class="app__item-point">0</h4>
+            </li>
+            <li class="app__item-first">
+                <h3 class="app__item-title">Fortune</h3>
+                <h4 class="app__item-point">0</h4>
+            </li>
+        </ul>
+        <div class="field">
+            <header class="field__header">
+                <div class="first-player__wrap">
+                    <img src="player1-icon.png" alt="" class="first-player-img player-b-g">
+                    <div class="first-player-count">0</div>
+                </div>
+                <div class="second-player__wrap">
+                    <img src="player2-icon.png" alt="" class="second-player-img player-b-r">
+                    <div class="second-player-count">0</div>
+                </div>
+            </header>
+            <ul class="field__list">
+                <li class="field__item"><i class="fas fa-dice-one"></i></li>
+                <li class="field__item"><i class="fas fa-dice-one"></i></li>
+                <li class="field__item"><i class="fas fa-dice-one"></i></li>
+                <li class="field__item"><i class="fas fa-dice-one"></i></li>
+                <li class="field__item"><i class="fas fa-dice-one"></i></li>
+            </ul>
+            <footer class="field__footer">
+                <!-- <button class="footer__btn" id="selectDice"><i class="fas fa-check"></i></button> -->
+                <button class="footer__btn" id="refreshDice"><i class="fas fa-dice"></i></button>
+            </footer>
+        </div>
+        <ul class="app__list">
+            <li class="app__item-second">
+                <h3 class="app__item-title">Units</h3>
+                <h4 class="app__item-point">0</h4>
+            </li>
+            <li class="app__item-second">
+                <h3 class="app__item-title">Deuces</h3>
+                <h4 class="app__item-point">0</h4>
+            </li>
+            <li class="app__item-second">
+                <h3 class="app__item-title">Triplets</h3>
+                <h4 class="app__item-point">0</h4>
+            </li>
+            <li class="app__item-second">
+                <h3 class="app__item-title">Fours</h3>
+                <h4 class="app__item-point">0</h4>
+            </li>
+            <li class="app__item-second">
+                <h3 class="app__item-title">Fives</h3>
+                <h4 class="app__item-point">0</h4>
+            </li>
+            <li class="app__item-second">
+                <h3 class="app__item-title">Sixes</h3>
+                <h4 class="app__item-point">0</h4>
+            </li>
+            <li class="app__item-second">
+                <h3 class="app__item-title">Three similar</h3>
+                <h4 class="app__item-point">0</h4>
+            </li>
+            <li class="app__item-second">
+                <h3 class="app__item-title">Square</h3>
+                <h4 class="app__item-point">0</h4>
+            </li>
+            <li class="app__item-second">
+                <h3 class="app__item-title">Full house</h3>
+                <h4 class="app__item-point">0</h4>
+            </li>
+            <li class="app__item-second">
+                <h3 class="app__item-title">Little street</h3>
+                <h4 class="app__item-point">0</h4>
+            </li>
+            <li class="app__item-second">
+                <h3 class="app__item-title">Big street</h3>
+                <h4 class="app__item-point">0</h4>
+            </li>
+            <li class="app__item-second">
+                <h3 class="app__item-title">Poker</h3>
+                <h4 class="app__item-point">0</h4>
+            </li>
+            <li class="app__item-second">
+                <h3 class="app__item-title">Fortune</h3>
+                <h4 class="app__item-point">0</h4>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

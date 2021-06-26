@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul, ol{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #101926;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin-bottom: 0;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.app{
+    display: flex;
+}
+
+.app__list{
+    height: 100vh;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background: #b5d1e2;
+    overflow-x: scroll;
+    padding: 3px;
+    justify-content: space-around;
+}
+
+.app__item-first{
+    display: flex;
+    margin-bottom: 3px;
+    color: #fff;
+}
+
+.app__item-first:last-child{
+    margin-bottom: 0;
+}
+
+.app__item-second{
+    display: flex;
+    margin-bottom: 3px;
+    color: #fff;
+}
+
+.app__item-second:last-child{
+    margin-bottom: 0;
+}
+
+.app__item-title{
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-size: 1.5rem;
+    font-family: 'Fredoka One';
+    margin: 0;
+    background: #173f5f;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.app__item-point{
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin: 0;
+    background: #3caea3;
+    font-size: 1.5rem;
+    font-family: 'Fredoka One';
+    cursor: pointer;
+}
+
+.app__item-first-click{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.app__item-first-click > h4{
+    cursor: auto;
+}
+
+.app__item-first-click > h3{
+    cursor: auto;
+}
+
+.app__item-second-click{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.app__item-second-click > h4{
+    cursor: auto;
+}
+
+.app__item-second-click > h3{
+    cursor: auto;
+}
+
+.field{
+    width: 40%;
+    background: #20639b;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.field__header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.first-player__wrap, .second-player__wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-player-img, .second-player-img{
+    width: 85px;
+    height: 85px;
+    padding: 5px;
+}
+
+.player-b-g{
+    background: green;
+    border: 5px solid green;
+    border-radius: 10px;
+}
+
+.player-b-r{
+    background: red;
+    border: 5px solid red;
+    border-radius: 10px;
+}
+
+.first-player-count, .second-player-count{
+    font-size: 2rem;
+    color: #fff;
+    font-family: 'Fredoka One';
+}
+
+.field__list{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.field__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95px;
+    height: 95px;
+    font-size: 5.5rem;
+    color: #fff;
+    transition: all 0.3s ease-out 0.01s;
+}
+
+.field__item--active{
+    border-radius: 16px;
+    background: green;
+}
+
+.field__footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__btn{
+    border: none;
+    background: #ed553b;
+    width: 100%;
+    padding: 10px 0px;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 10px;
+}

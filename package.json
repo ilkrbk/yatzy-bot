@@ -1,0 +1,17 @@
+{
+    "main": "index.html",
+    "name": "yahtzee",
+    "window": {
+        "title": "Yahtzee",
+        "toolbar": false,
+        "frame": true,
+        "width": 800,
+        "height": 700,
+        "position": "center",
+        "min_width": 800,
+        "min_height": 700,
+        "max_width": 800,
+        "max_height": 700
+    },
+    "author": "ilkrbk"
+}
